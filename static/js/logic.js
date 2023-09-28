@@ -61,7 +61,7 @@ d3.json("https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/
 //         "Earthquakes":earthquakes
 //     }}).addTo(map);
 
-L.control.layers({},{techtonicplates,earthquakes}).addTo(map);
+L.control.layers({},{"Techtonic Plats":techtonicplates,"Eathquakes":earthquakes}).addTo(map);
 
 var legend = L.control({position: 'bottomright'});
     legend.onAdd = function (map) {
